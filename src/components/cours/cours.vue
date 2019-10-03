@@ -1,7 +1,6 @@
 <template>
     <div>
-        <MainNavigation />
-
+    
         <v-flex lg4 offset-lg4 class="mt-12">
             <v-text-field v-model="searchString" outlined label="Rechercher un event..." @keydown="filteredArticles"></v-text-field>
         </v-flex>
@@ -46,11 +45,10 @@
 </template>
 
 <script>
-    import MainNavigation from "@/components/navigation/MainNavigation";
+   
     import axios from 'axios'
 
     export default {
-        components: { MainNavigation },
         data() {
             return {
                 apiKey: 'b6b5d5ac7210292761d683d6af73b1706ed66d88a86f2d6982fb5ad7',
